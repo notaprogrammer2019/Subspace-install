@@ -24,9 +24,7 @@ Official [github](https://github.com/subspace) and official [install node](https
     
    4.
    
-    systemctl daemon-reload
-    systemctl enable subspace-node subspace-farmer
-    systemctl restart subspace-node subspace-farmer
+    systemctl daemon-reload && systemctl enable subspace-node subspace-farmer && systemctl restart subspace-node subspace-farmer
    
    5. Checking results and interacting with farmnet. Visit [Polkadot.js explorer](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ffarm-rpc.subspace.network#/explorer), from there you can interact with the Subspace Farmnet as any Substrate-based blockchain.
 [Telemetry here](https://telemetry.polkadot.io/#list/0x332ef6e751e25426e38996c51299dfc53bcd56f40b53dce2b2fc8442ae9c4a74)

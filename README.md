@@ -6,7 +6,7 @@ Official [github](https://github.com/subspace) and official [install node](https
 
    1. Download the executable:
    
-    . <(wget -qO- https://raw.githubusercontent.com/notaprogrammer2019/Subspace-/main/subspace-install.sh)
+    . <(wget -qO- https://raw.githubusercontent.com/notaprogrammer2019/Subspace-install/main/install.sh)
     
    2. Rename your node here:
     

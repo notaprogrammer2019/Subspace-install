@@ -19,7 +19,7 @@ Official [github](https://github.com/subspace) and official [install node](https
     
     nano /etc/systemd/system/subspace-farmer.service
     ..
-    --reward-address=YOUR_SUBSPACE_WALLET_ADDRESS
+    --reward-address YOUR_SUBSPACE_WALLET_ADDRESS
     ..    
     
    4.

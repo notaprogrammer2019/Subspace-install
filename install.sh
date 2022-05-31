@@ -18,7 +18,7 @@ After=subspace-node.service
 [Service]
 Type=simple
 User=root
-ExecStart=subspace_farmer farm --reward-address YOUR_SUBSPACE_WALLET_ADDRESS
+ExecStart=subspace_farmer farm --reward-address YOUR_SUBSPACE_WALLET_ADDRESS --plot-size 50G
 Restart=on-failure
 RestartSec=10
 [Install]

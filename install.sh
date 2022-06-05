@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ver='wget -qO- https://api.github.com/repos/subspace/subspace/releases/latest | jq -r ".tag_name"'
+ver=`wget -qO- https://api.github.com/repos/subspace/subspace/releases/latest | jq -r ".tag_name"`
 
 apt install wget jq -y && wget -O subspace_node https://github.com/subspace/subspace/releases/download/${vers}/subspace-node-ubuntu-x86_64-${vers} && wget -O subspace_farmer https://github.com/subspace/subspace/releases/download/${vers}/subspace-farmer-ubuntu-x86_64-${vers} && chmod +x subspace* && sudo mv subspace* /usr/local/bin/ && printf "[Unit]
 Description=Subspace Node

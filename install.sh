@@ -8,7 +8,7 @@ After=network.target
 [Service]
 Type=simple
 User=root
-ExecStart=subspace_node --chain gemini-1 --wasm-execution compiled --execution wasm --validator --pruning archive --name INSERT_NAME_NODE
+ExecStart=subspace_node --chain gemini-1 --execution wasm --pruning 1024 --keep-blocks 1024 --validator --name INSERT_NAME_NODE
 Restart=on-failure
 RestartSec=10
 [Install]

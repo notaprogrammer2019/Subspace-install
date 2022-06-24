@@ -2,7 +2,7 @@
 
 ver=`wget -qO- https://api.github.com/repos/subspace/subspace/releases/latest | jq -r ".tag_name"`
 
-apt install wget jq -y && wget -O subspace_node https://github.com/subspace/subspace/releases/download/${ver}/subspace-node-ubuntu-x86_64-${ver} && wget -O subspace_farmer https://github.com/subspace/subspace/releases/download/${ver}/subspace-farmer-ubuntu-x86_64-${ver} && chmod +x subspace* && sudo mv subspace* /usr/local/bin/ && printf "[Unit]
+apt install wget jq ocl-icd-opencl-dev libopencl-clang-dev libgomp1 -y && wget -O subspace_node https://github.com/subspace/subspace/releases/download/${ver}/subspace-node-ubuntu-x86_64-${ver} && wget -O subspace_farmer https://github.com/subspace/subspace/releases/download/${ver}/subspace-farmer-ubuntu-x86_64-${ver} && chmod +x subspace* && sudo mv subspace* /usr/local/bin/ && printf "[Unit]
 Description=Subspace Node
 After=network.target
 [Service]
